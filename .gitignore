@@ -1,0 +1,9 @@
+# IDEs
+.vscode/
+.idea/
+
+# cache
+__pycache__/
+
+# user config file
+config.json
