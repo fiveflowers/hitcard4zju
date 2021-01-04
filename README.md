@@ -48,7 +48,7 @@ $ pip3 install -r requirements.txt
 ```bash
 python3 hitcard.py
 ```
-
+![DEMO](demo.png)
 # Tips
 - 自定义打卡定位，参考源 `repo` 的 [8#issue-565719250](https://github.com/Tishacy/ZJU-nCov-Hitcarder/issues/8#issue-565719250)
 
