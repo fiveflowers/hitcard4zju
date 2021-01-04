@@ -7,7 +7,7 @@
 <br/>
 
 
-> 项目来源于 [ZJU-nCov-Hitcarder](https://github.com/Tishacy/ZJU-nCov-Hitcarder)，该仓库在源 `repo` 的基础上增加了微信推送的功能，并对部分 `emoji` 进行调整
+> 项目来源于 [ZJU-nCov-Hitcarder](https://github.com/Tishacy/ZJU-nCov-Hitcarder)，核心功能由源 `repo` 实现，该仓库在源 `repo` 的基础上增加了微信推送的功能，并对部分 `emoji` 进行调整
 
 > 项目用于学习交流，如有身体不适等情况还请 **及时如实上报** ！
 
