@@ -144,7 +144,7 @@ def main(username, password):
         dk.login()
         spinner.succeed('已登录到浙江大学统一身份认证平台')
     except Exception as err:
-        send_message(sckey, "{}nCov打卡失败".format(datetime.date.today()), str(err))
+        send_message(sckey, "nCov打卡失败", str(err))
         spinner.stop_and_persist(symbol='💢'.encode('utf-8'), text=str(err))
         return
 
@@ -153,7 +153,7 @@ def main(username, password):
         dk.get_info()
         spinner.succeed('Hi👋, %s同学(学号%s)' %(dk.info['name'], dk.info['number']))
     except Exception as err:
-        send_message(sckey, "{}nCov打卡失败".format(datetime.date.today()), str(err))
+        send_message(sckey, 'nCov打卡失败', str(err))
         spinner.stop_and_persist(symbol='💢'.encode('utf-8'), text=str(err))
         return
 
@@ -162,13 +162,13 @@ def main(username, password):
     try:
         res = dk.post()
         if str(res['e']) == '0':
-            send_message(sckey, "{}nCov打卡成功!".format(datetime.date.today()))
+            send_message(sckey, "nCov打卡成功!", datetime.date.today())
             spinner.stop_and_persist(symbol='🦄'.encode('utf-8'), text='已为您打卡成功！')
         else:
-            send_message(sckey, "{}nCov打卡失败".format(datetime.date.today()), res['m'])
+            send_message(sckey, "nCov打卡失败", res['m'])
             spinner.stop_and_persist(symbol='💢'.encode('utf-8'), text=res['m'])
     except:
-        send_message(sckey, "{}nCov打卡失败".format(datetime.date.today()))
+        send_message(sckey, 'nCov打卡失败', '数据提交失败')
         spinner.stop_and_persist(symbol='💢'.encode('utf-8'), text='数据提交失败')
         return 
 
